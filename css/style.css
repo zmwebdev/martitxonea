@@ -3,7 +3,8 @@
 /* CSS Document */
 a[href^="tel:"] {
   color: inherit;
-  text-decoration: none;
+  /*text-decoration: none;*/
+  text-decoration: underline;
 }
 .color-1 {
   color: #efedef;
@@ -62,7 +63,7 @@ a[href^="tel:"] {
 header {
   padding: 30px 0 29px;
   z-index: 50;
- 
+
 }
 /* navbar */
 .navbar_ {
@@ -79,14 +80,14 @@ header {
 /*nav*/
 .navbar_ .container {
   position: relative;
-  
+
 }
 .nav-collapse_ {
  /*padding: 10;*/
   z-index: 10;
   float: right;
  margin-top:40px;
-  
+
   width:64%;
 }
 .nav-collapse_ .nav li {
@@ -94,7 +95,7 @@ header {
   padding: 0;
   position: relative;
   zoom: 1;
-  
+
 }
 .nav-collapse_ .nav > li {
   -webkit-box-shadow: none;
@@ -102,8 +103,8 @@ header {
   box-shadow: none;
   background: none;
   margin-left: 15px;
-  
-  
+
+
 }
 .nav-collapse_ .nav li a {
   text-shadow: none;
@@ -213,8 +214,8 @@ header {
   line-height: 0;
   padding: 12px 0 0 4px;
   margin: 0;
-  
- 
+
+
 }
 .navbar_ .brand_ h1 {
   font-size: 0;
@@ -928,14 +929,14 @@ footer {
 @media (min-width: 768px) and (max-width: 979px) {
   .navbar_ .btn {
     display: none !important;
-	
+
   }
   /* navbar */
   .navbar_ {
     margin: 0;
     position: relative;
-	
-	
+
+
   }
   .navbar_ .navbar-inner_ {
     padding: 0;
@@ -943,7 +944,7 @@ footer {
     border: none;
     min-height: inherit;
     filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
-	
+
   }
   /*nav*/
   .navbar_ .container {
@@ -957,12 +958,12 @@ footer {
   .nav-collapse_ .nav > li {
     float: left !important;
     margin-left: 10px;
-	
-	
+
+
   }
   .portfolio {
     margin-left: -10px;
-	
+
   }
   .portfolio li {
     margin-left: 30px;
@@ -974,7 +975,7 @@ footer {
   .img-indent {
     float: none;
     margin: 0 0 18px 0;
-	
+
   }
   .img-indent img {
     width: 100%;
@@ -990,7 +991,7 @@ footer {
 @media (max-width: 767px) {
   body {
     padding: 0;
-	
+
   }
   /* navbar */
   .nav-collapse_ {
@@ -1196,12 +1197,12 @@ footer {
   .img-indent {
     float: none;
     margin: 0 0 16px 0;
-	
-	
+
+
   }
   .img-indent img {
     width: 100%;
-	
+
   }
 }
 @media (max-width: 480px) {
@@ -1209,7 +1210,7 @@ footer {
     width: 200px;
     height: auto;
   }
-	
+
   .list-social {
     float: none !important;
   }
