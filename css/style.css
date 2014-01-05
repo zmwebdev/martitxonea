@@ -576,13 +576,10 @@ p {
 .map {
   margin: 0 0 25px;
   padding-top: 10px;
-  line-height: 0;
-}
-.map iframe {
-  border: none;
   width: 100%;
   height: 370px;
 }
+
 /*------ mail & address------- */
 .address-1 {
   overflow: hidden;
@@ -924,8 +921,8 @@ footer {
   .block-slogan h2 {
     padding-right: 30px;
   }
-  
-  
+
+
 }
 @media (min-width: 768px) and (max-width: 979px) {
   .navbar_ .btn {
@@ -1006,8 +1003,8 @@ footer {
 	top:105px;
 	/*top: 105px;*/
     right:0;
-	 
-	 
+
+
   }
   .navbar_ .btn {
     display: inline-block;
@@ -1209,12 +1206,12 @@ footer {
     width: 100%;
 
   }
-  
+
    .block-slogan h2 {
     float: none;
     margin-bottom: 16px;
     padding: 0;
-	
+
 	max-width:520px;
 
   }
@@ -1331,12 +1328,12 @@ footer {
 
 
 @media (max-width: 550px) {
- 
+
    .block-slogan h2 {
     float: none;
     margin-bottom: 16px;
     padding: 0;
-	
+
 	max-width:400px;
 	font-size:43px;
 
@@ -1344,9 +1341,9 @@ footer {
 }
 
 @media (max-width: 450px) {
- 
+
    .block-slogan h2 {
-   
+
 	max-width:400px;
 	font-size:43px;
 
