@@ -577,7 +577,7 @@ p {
   margin: 0 0 25px;
   padding-top: 10px;
   width: 100%;
-  height: 370px;
+  height: 370px !important;
 }
 
 /*------ mail & address------- */
