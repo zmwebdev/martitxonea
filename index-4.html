@@ -35,59 +35,6 @@
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:400' rel='stylesheet' type='text/css'>
   <![endif]-->
 
-  <!-- google maps -->
-    <style type="text/css">
-      html { height: 100% }
-      body { height: 100%; margin: 0; padding: 0 }
-      #map-canvas { height: 100% }
-    </style>
-    <script type="text/javascript"
-      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAVJ0jUaRQy1kjXIqG_u0JnksV13MNG54Y&sensor=true">
-    </script>
-    <script type="text/javascript">
-      function initialize() {
-        var martixoneaLatLong = new google.maps.LatLng(43.010000,-1.859700);
-        var mapOptions = {
-          center: martixoneaLatLong,
-          zoom: 19,
-          mapTypeId: google.maps.MapTypeId.SATELLITE
-        };
-        var map = new google.maps.Map(document.getElementById("map-canvas"),
-            mapOptions);
-
-          var marker = new google.maps.Marker({
-              position: martixoneaLatLong,
-              map: map,
-              title: 'Martitxonea Sagardotegia'
-          });
-
-
-          var contentString = '<div id="content">'+
-              '<div id="siteNotice">'+
-              '</div>'+
-              '<h1 id="firstHeading" class="firstHeading">Martitxonea Sagardotegia</h1>'+
-              '<div id="bodyContent">'+
-              '<p><b>Martitxonea Sagardotegia</b>, also referred to as Martitxonea Sagardotegia <b>Martitxonea Sagardotegia</b> Martitxonea Sagardotegia ' +
-              'Martitxonea Sagardotegia.</p>'+
-              '</div>'+
-              '</div>';
-
-          var infowindow = new google.maps.InfoWindow({
-              content: contentString
-          });
-
-          // infowindow.open(map,marker);
-
-          google.maps.event.addListener(marker, 'click', function() {
-            infowindow.open(map,marker);
-          });
-
-
-      }
-      google.maps.event.addDomListener(window, 'load', initialize);
-    </script>
-  <!-- end google maps -->
-
   <!-- google analytics -->
   <script>
     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -143,18 +90,19 @@
           <div class="row">
         <article class="span8">
               <h3>Non gaude?</h3>
-        </article>
               <div class="inner-1">
 
-                 <div class="map" id="map-canvas">
-                  </div>
+               <div class="map">
+           <iframe width="425" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps/ms?t=h&amp;msa=0&amp;msid=201800432552954465287.0004eec5c48c155fb131d&amp;source=embed&amp;ie=UTF8&amp;ll=43.010006,-1.859736&amp;spn=0.009454,0.011201&amp;iwloc=0004eec5c822a01705019&amp;output=embed"></iframe><br /></div>
 
-                 <address>
-                 Martitxonea sagardotegia - Aldatz - Nafarroa<br>
-                Telefonoa: <a href="tel:+34948604607">948 604 607</a>
-                </address>
 
-              </div>
+         <address>
+         Martitxonea sagardotegia - Aldatz - Nafarroa<br>
+        Telefonoa: <a href="tel:+34948604607">948 604 607</a>
+        </address>
+
+
+          </div>
 
           </div>
 
