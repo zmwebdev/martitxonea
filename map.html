@@ -8,16 +8,47 @@
       #map-canvas { height: 100% }
     </style>
     <script type="text/javascript"
-      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAVJ0jUaRQy1kjXIqG_u0JnksV13MNG54Y&sensor=SET_TO_TRUE_OR_FALSE">
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAVJ0jUaRQy1kjXIqG_u0JnksV13MNG54Y&sensor=true">
     </script>
     <script type="text/javascript">
       function initialize() {
+        var martixoneaLatLong = new google.maps.LatLng(43.010000,-1.859700);
         var mapOptions = {
-          center: new google.maps.LatLng(-34.397, 150.644),
-          zoom: 8
+          center: martixoneaLatLong,
+          zoom: 19,
+          mapTypeId: google.maps.MapTypeId.SATELLITE
         };
         var map = new google.maps.Map(document.getElementById("map-canvas"),
             mapOptions);
+
+          var marker = new google.maps.Marker({
+              position: martixoneaLatLong,
+              map: map,
+              title: 'Martitxonea Sagardotegia'
+          });
+
+
+          var contentString = '<div id="content">'+
+              '<div id="siteNotice">'+
+              '</div>'+
+              '<h1 id="firstHeading" class="firstHeading">Martitxonea Sagardotegia</h1>'+
+              '<div id="bodyContent">'+
+              '<p><b>Martitxonea Sagardotegia</b>, also referred to as Martitxonea Sagardotegia <b>Martitxonea Sagardotegia</b> Martitxonea Sagardotegia ' +
+              'Martitxonea Sagardotegia.</p>'+
+              '</div>'+
+              '</div>';
+
+          var infowindow = new google.maps.InfoWindow({
+              content: contentString
+          });
+
+          // infowindow.open(map,marker);
+
+          google.maps.event.addListener(marker, 'click', function() {
+            infowindow.open(map,marker);
+          });
+
+
       }
       google.maps.event.addDomListener(window, 'load', initialize);
     </script>
