@@ -65,6 +65,11 @@ header {
   z-index: 50;
 
 }
+
+#hizkuntzak{}
+
+#hizkuntzak a{ text-decoration:none; color:#666}
+#hizkuntzak a:hover{}
 /* navbar */
 .navbar_ {
   margin: 0;
